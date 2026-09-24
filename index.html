@@ -13,82 +13,190 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
+  <header class="nav on-dark" id="nav">
+    <div class="wrap">
       <a class="brand" href="./"><img src="images/icon.png" alt="">Downtray</a>
       <nav>
+        <a href="#top">Overview</a>
         <a href="#features">Features</a>
         <a href="#pro">Pro</a>
+        <a href="#faq">FAQ</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="APP_STORE_URL">Download</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero">
-      <img class="icon" src="images/icon.png" alt="Downtray app icon">
-      <h1>Your downloads, one click away.</h1>
-      <p class="lead">A menu bar inbox for the files that just landed in Downloads. Press <kbd>⌃⌥D</kbd>, see what arrived, act on it with one key.</p>
+  <section class="hero dark" id="top" data-theme="dark">
+    <div class="wrap">
+      <h1>Your downloads.<br>One click away.</h1>
+      <div class="demo">
+        <!-- videos/demo.mp4 is a short, silent loop. Replace it with a real screen recording; keep it under ~8 MB. -->
+        <video autoplay loop muted playsinline poster="images/demo-poster.jpg">
+          <source src="videos/demo.mp4" type="video/mp4">
+          <img src="images/demo-poster.jpg" alt="The Downtray popover listing the newest files in Downloads">
+        </video>
+      </div>
+      <p class="sub">A menu bar inbox for the files that just landed in Downloads.<br>See what arrived, deal with it, move on.</p>
       <div class="cta">
         <!-- Replace APP_STORE_URL with the link from App Store Connect once the app is live. -->
-        <a href="APP_STORE_URL"><img src="images/mac-app-store-badge.svg" alt="Download on the Mac App Store"></a>
-        <small>Free, with a one-time Pro upgrade. macOS 14 or later.</small>
+        <a class="btn" href="APP_STORE_URL">Get Downtray</a>
+        <a class="more" href="#pro">Free on the Mac App Store. Pro is a one-time $7.99 ›</a>
       </div>
-      <div class="shot"><img src="images/01-hero.jpg" alt="The Downtray popover listing the newest files in Downloads"></div>
-    </section>
+    </div>
+  </section>
 
-    <section id="features">
-      <h2>Everything a download needs, one key each.</h2>
-      <p class="sub">No Finder window, no digging through a folder of five hundred files.</p>
-      <div class="features">
-        <div class="feature"><h3>Newest first</h3><p>The files that just arrived are at the top, with a Quick Look thumbnail and where they came from. An unread badge on the menu bar icon counts what you have not opened yet.</p></div>
-        <div class="feature"><h3>One key to act</h3><p><kbd>Return</kbd> opens, <kbd>Space</kbd> previews, <kbd>⌘R</kbd> reveals in Finder, <kbd>⌘C</kbd> copies the path, <kbd>⌘M</kbd> moves, <kbd>⌘U</kbd> unzips in place, <kbd>⌫</kbd> trashes with undo.</p></div>
-        <div class="feature"><h3>Filter and search</h3><p>Last hour, today, or unread. Pick a type such as Docs, Images, Media, Archives or Apps, or search by name.</p></div>
-        <div class="feature"><h3>Drag anywhere</h3><p>Drag a file straight out of the list into Mail, Slack, a browser upload, or any folder.</p></div>
-        <div class="feature"><h3>Private by design</h3><p>No account, no network, no analytics. Downtray runs inside the App Sandbox and only reads the folders you allow.</p></div>
-        <div class="feature"><h3>Speaks your language</h3><p>English, Japanese, German and French. Follows the macOS language, or pick one in Settings.</p></div>
-      </div>
-    </section>
+  <section class="dark" id="features" data-theme="dark">
+    <div class="wrap">
+      <h2>An inbox for<br>what just landed.</h2>
+      <p class="sub">Press <kbd>⌃⌥D</kbd> from any app. The newest files are at the top,<br>with a thumbnail and where each one came from.</p>
 
-    <section>
-      <h2>See it in action.</h2>
-      <p class="sub">The popover, exactly as it looks on your Mac.</p>
-      <div class="gallery">
-        <figure><img src="images/02-filter.jpg" alt="Filtering the list to images"><figcaption>Filter by type</figcaption></figure>
-        <figure><img src="images/04-actions.jpg" alt="A file moved to the Trash with an Undo button"><figcaption>Trash with undo</figcaption></figure>
-        <figure><img src="images/05-rules.jpg" alt="A rule offering to trash an installer"><figcaption>Rules sort arrivals (Pro)</figcaption></figure>
-        <figure><img src="images/06-history.jpg" alt="The History view listing past downloads"><figcaption>Searchable history (Pro)</figcaption></figure>
-      </div>
-    </section>
-
-    <section id="pro">
-      <h2>Downtray Pro</h2>
-      <p class="sub">One purchase, yours for good. No subscription.</p>
-      <div class="pro">
-        <ul>
-          <li><strong>Extra folders.</strong> Watch the Desktop, a scanner folder, an AirDrop target, anything.</li>
-          <li><strong>A longer list.</strong> 200 files instead of 20.</li>
-          <li><strong>History.</strong> Every file that ever landed, even after you moved it, with search.</li>
-          <li><strong>Rules.</strong> Receipts into Receipts, installers to the Trash, or just ask first.</li>
-        </ul>
-        <div class="price">
-          <div class="amount">$7.99</div>
-          <div class="note">One-time in-app purchase.<br>Restore on any Mac signed in to the same Apple Account.</div>
+      <div class="tiles single">
+        <div class="tile">
+          <div class="text">
+            <h3>Native by design</h3>
+            <p>Downtray lives in the menu bar and feels like part of macOS. Dark and light mode, Quick Look, drag and drop, the real Trash with undo. No Dock icon, no window to manage.</p>
+          </div>
+          <div class="media tall"><img src="images/popover.png" alt="The Downtray popover listing the newest files in Downloads"></div>
         </div>
       </div>
-    </section>
 
-    <section class="faq">
+      <div class="tiles two">
+        <div class="tile">
+          <div class="text">
+            <h3>Newest first</h3>
+            <p>What just arrived sits at the top, with a Quick Look thumbnail and the site it came from. A badge on the menu bar icon counts what you have not opened yet.</p>
+          </div>
+          <div class="media"><img src="images/popover.png" alt="The popover with the newest files on top"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>Filter and search</h3>
+            <p>Last hour, today, or unread. Pick a type such as Docs, Images, Media or Archives, or just start typing a name.</p>
+          </div>
+          <div class="media"><img src="images/popover-search.png" alt="The popover filtered by a search for Q3"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>One key per action</h3>
+            <p><kbd>↩</kbd> opens, <kbd>Space</kbd> previews, <kbd>⌘R</kbd> reveals in Finder, <kbd>⌘C</kbd> copies the path, <kbd>⌘M</kbd> moves, <kbd>⌘U</kbd> unzips, <kbd>⌫</kbd> trashes with undo.</p>
+          </div>
+          <div class="media"><img src="images/popover-trash.png" alt="A file moved to the Trash, with an Undo button"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>Drag anywhere</h3>
+            <p>Drag a file straight out of the list into Mail, Slack, a browser upload or any folder. Then mark everything seen and the badge goes back to zero.</p>
+          </div>
+          <div class="media"><img src="images/popover-images.png" alt="The popover filtered to images, with one file selected"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="pro" data-theme="light">
+    <div class="wrap">
+      <h2>Do more with<br>every download.</h2>
+      <p class="sub">Downtray Pro adds the parts for people whose downloads never stop.</p>
+
+      <div class="tiles two">
+        <div class="tile">
+          <div class="text">
+            <h3>Rules</h3>
+            <p>Receipts into Receipts, installers to the Trash, screenshots to a folder. Let a rule act on its own, or have it ask first.</p>
+          </div>
+          <div class="media"><img src="images/popover-rules.png" alt="A rule offering to move an installer to the Trash"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>History</h3>
+            <p>Every file that ever landed, even after you moved it. Search by name, see where it went, open it from there.</p>
+          </div>
+          <div class="media"><img src="images/popover-history.png" alt="The History view listing past downloads"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>Extra folders</h3>
+            <p>Watch the Desktop, a scanner folder, an AirDrop target, a shared drive. Anything that receives files can be an inbox.</p>
+          </div>
+          <div class="media"><img src="images/settings-folders.png" alt="The Folders settings listing watched folders"></div>
+        </div>
+        <div class="tile">
+          <div class="text">
+            <h3>A longer list</h3>
+            <p>The inbox keeps 200 files instead of 20, and you choose how many days they stay before they move to History.</p>
+          </div>
+          <div class="media number"><span>200</span><small>files in the inbox</small></div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="label"><img src="images/icon.png" alt="">Downtray Pro</div>
+        <h3>One purchase. Yours for good.</h3>
+        <div class="price">$7.99</div>
+        <p>One-time in-app purchase. No subscription.<br>Restore on any Mac signed in to the same Apple Account.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="details" data-theme="light">
+    <div class="wrap">
+      <h2>Built for<br>keyboard people.</h2>
+      <div class="list">
+        <p><strong>Global shortcut.</strong> Open the inbox with <kbd>⌃⌥D</kbd> from any app, or record your own.</p>
+        <p><strong>Unread badge.</strong> The menu bar icon counts the files you have not opened yet.</p>
+        <p><strong>Quick Look.</strong> Preview any file with Space without leaving the list.</p>
+        <p><strong>Unzip in place.</strong> Expand archives right where they landed, with <kbd>⌘U</kbd>.</p>
+        <p><strong>Move to.</strong> Send a file to a recent folder or pick one in Finder.</p>
+        <p><strong>Trash with undo.</strong> Files go to the real Trash, and one click brings them back.</p>
+        <p><strong>Copy path.</strong> Put the full path on the clipboard for the terminal or a script.</p>
+        <p><strong>Where it came from.</strong> The site a file was downloaded from, right under its name.</p>
+        <p><strong>Mark all seen.</strong> One click clears the badge without touching the files.</p>
+        <p><strong>Sandboxed.</strong> Downtray only reads the folders you allow, nothing else.</p>
+        <p><strong>No network.</strong> No account, no analytics, no crash reporting of its own.</p>
+        <p><strong>Four languages.</strong> English, Japanese, German and French, following macOS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="light faq" id="faq" data-theme="light">
+    <div class="wrap narrow">
       <h2>Questions</h2>
-      <p class="sub">More on the <a href="support.html">support page</a>.</p>
       <details><summary>Why does macOS ask for access to Downloads?</summary><p>Downtray is sandboxed. It can only list and act on files in folders you explicitly allow, and Downloads is the first one it asks for. Nothing is read anywhere else.</p></details>
       <details><summary>Does it upload or track anything?</summary><p>No. The app has no network access at all. Settings and history stay in the app's local container on your Mac.</p></details>
       <details><summary>Can I change the shortcut?</summary><p>Yes. Open Settings from the gear icon and record a new shortcut under General.</p></details>
-    </section>
+      <details><summary>Is Pro a subscription?</summary><p>No. Pro is a one-time purchase inside the app. It unlocks on every Mac signed in to the same Apple Account with Restore Purchases.</p></details>
+      <details><summary>Where do I get help?</summary><p>On the <a href="support.html">support page</a>. Questions usually get an answer within a day or two.</p></details>
+    </div>
+  </section>
 
-    <footer>
-      <div>© 2026 Downtray</div>
-      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
-    </footer>
-  </div>
+  <footer>
+    <div class="wrap">
+      <div class="brand">
+        <img src="images/icon.png" alt="">
+        <div><strong>Downtray</strong><span>Your downloads, one click away</span></div>
+      </div>
+      <div class="cols">
+        <div><h4>Product</h4><a href="#top">Overview</a><a href="#features">Features</a><a href="#pro">Pro</a><a href="APP_STORE_URL">Download</a></div>
+        <div><h4>Support</h4><a href="#faq">FAQ</a><a href="support.html">Contact</a><a href="https://github.com/uname0x96/downtray/issues">Report a bug</a><a href="privacy.html">Privacy policy</a></div>
+      </div>
+      <p class="copy">© 2026 Nguyen Thanh Cong</p>
+    </div>
+  </footer>
+
+  <script>
+    // Switch the fixed nav between light and dark text to match the section under it.
+    (function () {
+      var nav = document.getElementById('nav');
+      var sections = document.querySelectorAll('[data-theme]');
+      function update() {
+        var y = window.scrollY + 40, theme = 'light';
+        sections.forEach(function (s) { if (s.offsetTop <= y) theme = s.dataset.theme; });
+        nav.classList.toggle('on-dark', theme === 'dark');
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
 </body>
 </html>

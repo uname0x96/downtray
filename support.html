@@ -9,16 +9,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
+  <header class="nav" id="nav">
+    <div class="wrap">
       <a class="brand" href="./"><img src="images/icon.png" alt="">Downtray</a>
       <nav>
+        <a href="./">Overview</a>
         <a href="./#features">Features</a>
         <a href="./#pro">Pro</a>
+        <a href="./#faq">FAQ</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="APP_STORE_URL">Download</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
     <main class="prose">
       <h1>Support</h1>
@@ -54,11 +57,18 @@
       <h2 style="font-size:19px">How do I remove everything Downtray stored?</h2>
       <p>Quit Downtray and delete the folder <code>~/Library/Containers/app.downtray.mac</code>. This removes settings and history. Your files are never touched.</p>
     </main>
-
-    <footer>
-      <div>© 2026 Downtray</div>
-      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
-    </footer>
-  </div>
+  <footer>
+    <div class="wrap">
+      <div class="brand">
+        <img src="images/icon.png" alt="">
+        <div><strong>Downtray</strong><span>Your downloads, one click away</span></div>
+      </div>
+      <div class="cols">
+        <div><h4>Product</h4><a href="./">Overview</a><a href="./#features">Features</a><a href="./#pro">Pro</a><a href="APP_STORE_URL">Download</a></div>
+        <div><h4>Support</h4><a href="./#faq">FAQ</a><a href="support.html">Contact</a><a href="https://github.com/uname0x96/downtray/issues">Report a bug</a><a href="privacy.html">Privacy policy</a></div>
+      </div>
+      <p class="copy">© 2026 Nguyen Thanh Cong</p>
+    </div>
+  </footer>
 </body>
 </html>

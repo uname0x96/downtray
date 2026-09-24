@@ -20,3 +20,4 @@ downloads on macOS. Three pages, no build step: `index.html`, `support.html`, `p
 
 Add a `CNAME` file containing the domain (for example `downtray.app`), point the domain's DNS
 at GitHub Pages, and update the three URLs in App Store Connect. No other change is needed.
+
