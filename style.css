@@ -73,14 +73,16 @@ section.dark .tile { background: var(--dark-tile); border-color: rgba(255, 255, 
 .tile p { margin: 0; color: var(--muted); font-size: 17px; }
 section.dark .tile p { color: var(--muted-on-dark); }
 .tile .media { position: relative; height: 240px; margin: 0 32px 32px; border-radius: 14px; overflow: hidden; background: #1b2a4a url("images/wallpaper.jpg") center/cover no-repeat; }
-.tile .media img { position: absolute; left: 50%; top: 22px; transform: translateX(-50%); width: 62%; border-radius: 10px 10px 0 0; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12); }
+.tile .media::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 40px; background: url("images/menubar.png") center top / 100% auto no-repeat; z-index: 1; }
+.tile .media.number::before { display: none; }
+.tile .media img { position: absolute; left: 50%; top: 37px; transform: translateX(-50%); width: 62%; border-radius: 10px 10px 0 0; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12); }
 .tile .media.number { display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
 .tile .media.number span { font-size: 96px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
 .tile .media.number small { font-size: 15px; opacity: 0.85; margin-top: 6px; }
 .tiles.single .tile { flex-direction: row; align-items: stretch; }
 .tiles.single .text { flex: 0 0 40%; display: flex; flex-direction: column; justify-content: center; padding: 40px; }
 .tiles.single .media.tall { flex: 1; height: 360px; margin: 32px 32px 32px 0; }
-.tiles.single .media.tall img { width: 44%; top: 28px; }
+.tiles.single .media.tall img { width: 44%; top: 37px; }
 
 /* Pro banner */
 .banner { margin-top: 20px; padding: 40px 40px 48px; border-radius: 22px; color: #fff; text-align: center; background: linear-gradient(135deg, #1f6fff, #2a2aff 55%, #4b1bd6); box-shadow: 0 30px 60px -20px rgba(42, 42, 255, 0.5); }
