@@ -1,6 +1,6 @@
 # Downtray website
 
-Static site for [Downtray](https://github.com/uname0x96/downtray), the menu bar inbox for new
+Static site for [Downtray](https://github.com/uname0x96/downtray-macos), the menu bar inbox for new
 downloads on macOS. Three pages, no build step: `index.html`, `support.html`, `privacy.html`.
 
 ## Publish on GitHub Pages
