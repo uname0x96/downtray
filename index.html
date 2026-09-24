@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downtray — Your downloads, one click away</title>
+  <meta name="description" content="Downtray is a menu bar inbox for the files that land in your Downloads folder. Press ⌃⌥D, see what just arrived, and open, move, unzip or trash it with one key.">
+  <meta property="og:title" content="Downtray — Your downloads, one click away">
+  <meta property="og:description" content="A menu bar inbox for new downloads on macOS. Private, sandboxed, no network.">
+  <meta property="og:image" content="images/01-hero.jpg">
+  <link rel="icon" href="images/icon.png">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="./"><img src="images/icon.png" alt="">Downtray</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pro">Pro</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img class="icon" src="images/icon.png" alt="Downtray app icon">
+      <h1>Your downloads, one click away.</h1>
+      <p class="lead">A menu bar inbox for the files that just landed in Downloads. Press <kbd>⌃⌥D</kbd>, see what arrived, act on it with one key.</p>
+      <div class="cta">
+        <!-- Replace APP_STORE_URL with the link from App Store Connect once the app is live. -->
+        <a href="APP_STORE_URL"><img src="images/mac-app-store-badge.svg" alt="Download on the Mac App Store"></a>
+        <small>Free, with a one-time Pro upgrade. macOS 14 or later.</small>
+      </div>
+      <div class="shot"><img src="images/01-hero.jpg" alt="The Downtray popover listing the newest files in Downloads"></div>
+    </section>
+
+    <section id="features">
+      <h2>Everything a download needs, one key each.</h2>
+      <p class="sub">No Finder window, no digging through a folder of five hundred files.</p>
+      <div class="features">
+        <div class="feature"><h3>Newest first</h3><p>The files that just arrived are at the top, with a Quick Look thumbnail and where they came from. An unread badge on the menu bar icon counts what you have not opened yet.</p></div>
+        <div class="feature"><h3>One key to act</h3><p><kbd>Return</kbd> opens, <kbd>Space</kbd> previews, <kbd>⌘R</kbd> reveals in Finder, <kbd>⌘C</kbd> copies the path, <kbd>⌘M</kbd> moves, <kbd>⌘U</kbd> unzips in place, <kbd>⌫</kbd> trashes with undo.</p></div>
+        <div class="feature"><h3>Filter and search</h3><p>Last hour, today, or unread. Pick a type such as Docs, Images, Media, Archives or Apps, or search by name.</p></div>
+        <div class="feature"><h3>Drag anywhere</h3><p>Drag a file straight out of the list into Mail, Slack, a browser upload, or any folder.</p></div>
+        <div class="feature"><h3>Private by design</h3><p>No account, no network, no analytics. Downtray runs inside the App Sandbox and only reads the folders you allow.</p></div>
+        <div class="feature"><h3>Speaks your language</h3><p>English, Japanese, German and French. Follows the macOS language, or pick one in Settings.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>See it in action.</h2>
+      <p class="sub">The popover, exactly as it looks on your Mac.</p>
+      <div class="gallery">
+        <figure><img src="images/02-filter.jpg" alt="Filtering the list to images"><figcaption>Filter by type</figcaption></figure>
+        <figure><img src="images/04-actions.jpg" alt="A file moved to the Trash with an Undo button"><figcaption>Trash with undo</figcaption></figure>
+        <figure><img src="images/05-rules.jpg" alt="A rule offering to trash an installer"><figcaption>Rules sort arrivals (Pro)</figcaption></figure>
+        <figure><img src="images/06-history.jpg" alt="The History view listing past downloads"><figcaption>Searchable history (Pro)</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="pro">
+      <h2>Downtray Pro</h2>
+      <p class="sub">One purchase, yours for good. No subscription.</p>
+      <div class="pro">
+        <ul>
+          <li><strong>Extra folders.</strong> Watch the Desktop, a scanner folder, an AirDrop target, anything.</li>
+          <li><strong>A longer list.</strong> 200 files instead of 20.</li>
+          <li><strong>History.</strong> Every file that ever landed, even after you moved it, with search.</li>
+          <li><strong>Rules.</strong> Receipts into Receipts, installers to the Trash, or just ask first.</li>
+        </ul>
+        <div class="price">
+          <div class="amount">$7.99</div>
+          <div class="note">One-time in-app purchase.<br>Restore on any Mac signed in to the same Apple Account.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Questions</h2>
+      <p class="sub">More on the <a href="support.html">support page</a>.</p>
+      <details><summary>Why does macOS ask for access to Downloads?</summary><p>Downtray is sandboxed. It can only list and act on files in folders you explicitly allow, and Downloads is the first one it asks for. Nothing is read anywhere else.</p></details>
+      <details><summary>Does it upload or track anything?</summary><p>No. The app has no network access at all. Settings and history stay in the app's local container on your Mac.</p></details>
+      <details><summary>Can I change the shortcut?</summary><p>Yes. Open Settings from the gear icon and record a new shortcut under General.</p></details>
+    </section>
+
+    <footer>
+      <div>© 2026 Downtray</div>
+      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+    </footer>
+  </div>
+</body>
+</html>

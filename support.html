@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Downtray</title>
+  <meta name="description" content="Help and frequently asked questions for Downtray, the menu bar inbox for new downloads on macOS.">
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="./"><img src="images/icon.png" alt="">Downtray</a>
+      <nav>
+        <a href="./#features">Features</a>
+        <a href="./#pro">Pro</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="prose">
+      <h1>Support</h1>
+      <p class="meta">Downtray is made by one person. Questions usually get an answer within a day or two.</p>
+
+      <h2>Get in touch</h2>
+      <p>Email <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>. Include your macOS version and the Downtray version from the gear menu if you are reporting a problem.</p>
+      <p>Bug reports and feature requests are also welcome on <a href="https://github.com/uname0x96/downtray/issues">GitHub Issues</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h2 style="font-size:19px">Downtray shows nothing after launch</h2>
+      <p>Click the tray icon in the menu bar or press ⌃⌥D. On first launch macOS asks "Downtray would like to access files in your Downloads folder". Allow it. If you clicked Don't Allow, open System Settings → Privacy &amp; Security → Files and Folders, find Downtray, and turn on Downloads Folder.</p>
+
+      <h2 style="font-size:19px">I do not see the menu bar icon</h2>
+      <p>Downtray has no Dock icon. Look for the tray icon at the top right of the screen. If the menu bar is full, macOS hides icons from the left; close another menu bar app or use a wider display.</p>
+
+      <h2 style="font-size:19px">How do I change the shortcut?</h2>
+      <p>Open Settings from the gear icon in the popover, then record a new shortcut under General → Show inbox.</p>
+
+      <h2 style="font-size:19px">I bought Pro on another Mac. How do I unlock it here?</h2>
+      <p>Open Settings → Pro and click Restore Purchases. You need to be signed in to the App Store with the same Apple Account you used to buy it.</p>
+
+      <h2 style="font-size:19px">I want a refund for Pro</h2>
+      <p>Purchases are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <h2 style="font-size:19px">A rule moved a file somewhere I did not expect</h2>
+      <p>Open History (Pro) to see where every file went. Rules only act on the folders you watch and with the actions you configured. Edit or disable a rule under Settings → Rules.</p>
+
+      <h2 style="font-size:19px">A file is gone from the list but still in Downloads</h2>
+      <p>The inbox shows files from the last 7 days by default. Change "Keep items" under Settings → List, or open History to find older files.</p>
+
+      <h2 style="font-size:19px">How do I remove everything Downtray stored?</h2>
+      <p>Quit Downtray and delete the folder <code>~/Library/Containers/app.downtray.mac</code>. This removes settings and history. Your files are never touched.</p>
+    </main>
+
+    <footer>
+      <div>© 2026 Downtray</div>
+      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+    </footer>
+  </div>
+</body>
+</html>
