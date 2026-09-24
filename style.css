@@ -44,6 +44,11 @@ kbd { font-family: inherit; font-size: 0.85em; font-weight: 600; padding: 0 6px;
 .nav.on-dark { background: rgba(0, 0, 0, 0.72); border-color: rgba(255, 255, 255, 0.08); }
 .nav.on-dark .brand, .nav.on-dark nav a { color: var(--text-on-dark); }
 
+/* GitHub ribbon: a rotated band clipped to the corner just below the fixed nav. */
+.fork { position: absolute; top: 56px; right: 0; z-index: 9; width: 150px; height: 150px; overflow: hidden; pointer-events: none; }
+.fork span { position: absolute; top: 44px; right: -50px; width: 220px; height: 32px; line-height: 32px; transform: rotate(45deg); pointer-events: auto; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: #fff; background: var(--accent); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35); outline: 1px dashed rgba(255, 255, 255, 0.45); outline-offset: -5px; transition: filter 0.2s; }
+.fork:hover span { filter: brightness(1.12); text-decoration: none; }
+
 /* Sections */
 section { padding: 120px 0; }
 section.dark { background: var(--dark); color: var(--text-on-dark); }
@@ -129,6 +134,7 @@ footer .cols a { display: block; color: var(--muted); margin: 0 0 8px; }
 footer .copy { grid-column: 1 / -1; text-align: center; color: var(--muted); margin: 40px 0 0; }
 
 @media (max-width: 760px) {
+  .fork { display: none; }
   h1, h2 { font-size: 38px; }
   section { padding: 80px 0; }
   .hero { padding-top: 120px; }
