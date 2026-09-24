@@ -13,7 +13,7 @@ downloads on macOS. Three pages, no build step: `index.html`, `support.html`, `p
 
 - Replace `SUPPORT_EMAIL` in `support.html` and `privacy.html` with the real address.
 - Replace `APP_STORE_URL` in `index.html` with the App Store link once the app is approved.
-- Optionally replace the "Get in App Store" button with the official badge from
+- Swap `images/mac-app-store-badge.svg` for the official badge from
   https://developer.apple.com/app-store/marketing/guidelines/ (Apple asks for its own artwork).
 
 ## Custom domain later
