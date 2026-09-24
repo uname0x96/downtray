@@ -18,7 +18,7 @@
       <a class="brand" href="./"><img src="images/icon.png" alt="">Downtray</a>
       <nav>
         <a href="#why">Why</a>
-        <a href="#how">How</a>
+        <a href="#how">How it works</a>
         <a href="#pro">Pro</a>
         <a href="support.html">Support</a>
       </nav>
@@ -28,9 +28,10 @@
       <div>
         <div class="title">
           <img src="images/icon.png" alt="Downtray app icon">
-          <h1>Downtray</h1>
+          <span>Downtray</span>
         </div>
-        <p class="lead">Menu bar inbox for macOS which does one job: keep the files that just landed in Downloads at hand. Period.</p>
+        <h1>Your downloads, one click away.</h1>
+        <p class="lead">A menu bar inbox for the files that just landed in Downloads. Press ⌃⌥D, see what arrived, deal with it in one keystroke. Lightweight, private, no fluff.</p>
         <p class="tags">Lightweight. Private. No fluff.</p>
         <div class="buttons">
           <!-- Replace APP_STORE_URL with the link from App Store Connect once the app is live. -->
@@ -40,101 +41,90 @@
         <p class="req">Requires macOS Sonoma 14 or higher</p>
       </div>
       <div class="visual">
-        <img src="images/popover.png" alt="The Downtray popover listing the newest files in Downloads">
+        <div class="desktop">
+          <div class="menubar"><span class="left">Finder</span><span class="tray">↓</span><span class="badge">3</span><span>Wed 9:41 AM</span></div>
+          <img src="images/popover.png" alt="The Downtray popover listing the newest files in Downloads">
+        </div>
       </div>
     </section>
 
     <section id="why">
-      <h2>Why?</h2>
+      <h2>Why Downtray?</h2>
+      <p class="sub">Downloads is where files pile up. Downtray is the shortcut through the pile.</p>
       <div class="why">
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No fluff</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>No fluff</h3>
           <p>Unlike file managers and launchers, Downtray does one thing: it shows what just landed in Downloads and lets you deal with it. No sidebar, no tabs, no cloud.</p>
         </div>
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Lightweight and fast</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Lightweight and fast</h3>
           <p>A single popover that opens instantly. The list is ready before your hand leaves the keyboard, with a thumbnail and the site each file came from.</p>
         </div>
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>Keyboard-first</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></span>Keyboard-first</h3>
           <p>Press ⌃⌥D, arrow to a file, and one key does the rest: open, Quick Look, reveal, copy path, move, unzip, trash. Your hands never leave the keyboard.</p>
         </div>
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Secure and private</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Secure and private</h3>
           <p>Sandboxed, no network, no analytics, no account. Downtray only reads the folders you allow, and everything it remembers stays on your Mac.</p>
         </div>
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg>Native</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg></span>Native</h3>
           <p>Built with SwiftUI and AppKit. Dark and light mode, Quick Look, drag and drop, the real Trash with undo. It looks and feels like part of macOS.</p>
         </div>
         <div class="item">
-          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>Any folder, any language</h3>
+          <h3><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg></span>Any folder, any language</h3>
           <p>Watch the Desktop, a scanner folder or an AirDrop target too. Available in English, Japanese, German and French, following your macOS language.</p>
         </div>
       </div>
     </section>
 
+
+  </div>
     <section id="how">
-      <h2>How?</h2>
+      <h2>How it works</h2>
+      <p class="sub">One popover, a handful of keys.</p>
       <div class="how">
-        <svg viewBox="0 0 1060 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="The Downtray popover with callouts explaining each part">
-          <defs>
-            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.28"/></filter>
-            <clipPath id="round"><rect x="370" y="60" width="320" height="462" rx="12"/></clipPath>
-          </defs>
-          <rect x="370" y="60" width="320" height="462" rx="12" fill="#1f1f22" filter="url(#shadow)"/>
-          <image xlink:href="images/popover.png" href="images/popover.png" x="370" y="60" width="320" height="462" clip-path="url(#round)"/>
-
-          <!-- left callouts, right-aligned toward the popover -->
-          <text class="callout" x="330" y="70" text-anchor="end">Press ⌃⌥D to open</text>
-          <path class="wire" d="M340 64 C 360 64, 365 80, 382 78"/>
-          <text class="callout" x="320" y="150" text-anchor="end">1h, today, or unread</text>
-          <path class="wire" d="M330 144 C 355 140, 365 118, 392 108"/>
-          <text class="callout" x="320" y="230" text-anchor="end">Search by name or type</text>
-          <path class="wire" d="M330 224 C 360 220, 365 150, 400 140"/>
-          <text class="callout" x="330" y="330" text-anchor="end">Newest arrivals on top</text>
-          <path class="wire" d="M340 324 C 365 322, 365 205, 402 200"/>
-          <text class="callout" x="330" y="430" text-anchor="end">Drag straight into any app</text>
-          <path class="wire" d="M340 424 C 365 420, 365 300, 410 290"/>
-
-          <!-- right callouts -->
-          <text class="callout" x="730" y="110">Return opens, Space previews</text>
-          <path class="wire" d="M720 104 C 700 104, 695 178, 670 190"/>
-          <text class="callout" x="740" y="230">⌘M to move, ⌘U to unzip</text>
-          <path class="wire" d="M730 224 C 710 224, 706 250, 676 258"/>
-          <text class="callout" x="740" y="350">⌫ to Trash, with undo</text>
-          <path class="wire" d="M730 344 C 710 344, 706 330, 676 328"/>
-          <text class="callout" x="730" y="470">Filter by type</text>
-          <path class="wire" d="M720 464 C 700 460, 705 120, 670 106"/>
-          <text class="callout" x="530" y="600" text-anchor="middle">Rules and history in Pro</text>
-          <path class="wire" d="M530 578 C 530 560, 530 545, 530 530"/>
-        </svg>
+        <div class="figure">
+          <img src="images/popover.png" alt="The Downtray popover listing the newest files in Downloads">
+          <div class="marker" style="left: 96%; top: 3.8%">1</div>
+          <div class="marker" style="left: 96%; top: 13%">2</div>
+          <div class="marker" style="left: 4%; top: 31%">3</div>
+          <div class="marker" style="left: 4%; top: 66%">4</div>
+        </div>
+        <ol>
+          <li><div><strong>Press ⌃⌥D</strong><span>The popover opens under the menu bar icon, from any app. Newest files on top, with a thumbnail and where they came from.</span></div></li>
+          <li><div><strong>Narrow it down</strong><span>Last hour, today, or unread. Pick a type such as Docs, Images or Archives, or search by name.</span></div></li>
+          <li><div><strong>One key per action</strong><span>Return opens, Space previews, ⌘R reveals, ⌘C copies the path, ⌘M moves, ⌘U unzips, ⌫ trashes with undo.</span></div></li>
+          <li><div><strong>Drag it out</strong><span>Straight from the list into Mail, Slack, a browser upload or a folder. Then mark everything seen and the badge goes back to zero.</span></div></li>
+        </ol>
       </div>
     </section>
-
+  <div class="wrap">
     <section id="pro">
       <h2>Downtray Pro</h2>
+      <p class="sub">For people whose downloads never stop.</p>
       <div class="pro">
         <div>
           <ul>
-            <li><strong>Extra folders.</strong> Watch the Desktop, a scanner folder, an AirDrop target, anything.</li>
-            <li><strong>A longer list.</strong> 200 files instead of 20.</li>
-            <li><strong>History.</strong> Every file that ever landed, even after you moved it, with search.</li>
-            <li><strong>Rules.</strong> Receipts into Receipts, installers to the Trash, or just ask first.</li>
+            <li><div><strong>Extra folders.</strong> Watch the Desktop, a scanner folder, an AirDrop target, anything.</div></li>
+            <li><div><strong>A longer list.</strong> 200 files instead of 20.</div></li>
+            <li><div><strong>History.</strong> Every file that ever landed, even after you moved it, with search.</div></li>
+            <li><div><strong>Rules.</strong> Receipts into Receipts, installers to the Trash, or just ask first.</div></li>
           </ul>
+          <div class="buy">
+            <div class="amount">$7.99</div>
+            <div class="note">One-time purchase inside the app.<br>No subscription. Restore on any Mac with the same Apple Account.</div>
+          </div>
         </div>
         <div class="visual">
           <img src="images/popover-rules.png" alt="A rule offering to move an installer to the Trash">
-          <div class="price">
-            <div class="amount">$7.99</div>
-            <div class="note">One-time in-app purchase. No subscription.<br>Restore on any Mac with the same Apple Account.</div>
-          </div>
         </div>
       </div>
     </section>
 
     <section class="faq">
-      <h2>Questions?</h2>
+      <h2>Questions</h2>
       <details><summary>Why does macOS ask for access to Downloads?</summary><p>Downtray is sandboxed. It can only list and act on files in folders you explicitly allow, and Downloads is the first one it asks for. Nothing is read anywhere else.</p></details>
       <details><summary>Does it upload or track anything?</summary><p>No. The app has no network access at all. Settings and history stay in the app's local container on your Mac.</p></details>
       <details><summary>Can I change the shortcut?</summary><p>Yes. Open Settings from the gear icon and record a new shortcut under General.</p></details>
@@ -144,10 +134,9 @@
     <footer>
       <div class="buttons">
         <a class="btn primary" href="APP_STORE_URL"><svg viewBox="0 0 24 24"><path d="M16.4 12.7c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.7.9-.8 0-2-.9-3.2-.9-1.7 0-3.2 1-4.1 2.5-1.7 3-.4 7.5 1.3 9.9.8 1.2 1.8 2.5 3.1 2.5 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.6-3.9zM14 5.3c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>Get in App Store</a>
-        <a class="btn" href="support.html">Support</a>
-        <a class="btn" href="privacy.html">Privacy</a>
       </div>
-      <p>© 2026 Nguyen Thanh Cong.</p>
+      <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="https://github.com/uname0x96/downtray/issues">Report a bug</a></div>
+      <p>© 2026 Nguyen Thanh Cong. Made in Vietnam.</p>
     </footer>
   </div>
 </body>
