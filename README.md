@@ -11,7 +11,7 @@ downloads on macOS. Three pages, no build step: `index.html`, `support.html`, `p
 
 ## Before going live
 
-- Replace `SUPPORT_EMAIL` in `support.html` and `privacy.html` with the real address.
+- Support and privacy questions go to uname0x96@gmail.com (in `support.html` and `privacy.html`).
 - The Download buttons point at the Mac App Store listing: https://apps.apple.com/us/app/downtray/id6815153471
 - Swap `images/mac-app-store-badge.svg` for the official badge from
   https://developer.apple.com/app-store/marketing/guidelines/ (Apple asks for its own artwork).
