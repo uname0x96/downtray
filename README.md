@@ -12,7 +12,7 @@ downloads on macOS. Three pages, no build step: `index.html`, `support.html`, `p
 ## Before going live
 
 - Replace `SUPPORT_EMAIL` in `support.html` and `privacy.html` with the real address.
-- Replace `APP_STORE_URL` in `index.html` with the App Store link once the app is approved.
+- The Download buttons point at the Mac App Store listing: https://apps.apple.com/us/app/downtray/id6815153471
 - Swap `images/mac-app-store-badge.svg` for the official badge from
   https://developer.apple.com/app-store/marketing/guidelines/ (Apple asks for its own artwork).
 
